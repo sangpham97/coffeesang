@@ -63,6 +63,7 @@
 </template>
 
 <script>
+import axiosInstance from "../axiosInstance";
 export default {
     props: ["id", "menu"],
     data() {

@@ -116,7 +116,6 @@
                                        <th>SalePrice</th>
                                        <th>Image</th>
                                        <th>Delete</th>
-                                       <th>Update</th>
                                    </tr>
                                @foreach ($menus as $menu)
                                    <tr>
@@ -125,7 +124,6 @@
                                        <td>{{$menu->saleprice}}</td>
                                        <td ><img src="/storage/{{$menu->image}}" alt="" class="image image-fluid w-25 h-25"></td>
                                        <td><a href="/deletemenu/{{$menu->id}}" class="text-danger">delete</a></td>
-                                       <td><admin-menu-component id='{{$menu->id}}' menu='{{$menu}}'></td>
                                    </tr>
                                @endforeach
                                </table>
